@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Link } from 'react-router-dom'
 
 const isLoggedIn = false
 
@@ -30,7 +29,13 @@ export const Header = () => {
             <MenuIcon />
           </IconButton>
 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} onClick={forwardHome}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+            onClick={forwardHome}
+            className="cursor-pointer"
+          >
             Foodbors
           </Typography>
 
